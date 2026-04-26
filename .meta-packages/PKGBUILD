@@ -1,0 +1,58 @@
+pkgname=00-meta-cachyos
+pkgver=1.0
+pkgrel=1
+pkgdesc="Comprehensive meta-package for CachyOS system essentials"
+arch=('any')
+
+depends=(
+    # --- Core System & Tooling ---
+    'base'                           # Minimal system base
+    'base-devel'                     # Utilities for building packages
+    'sudo'                           # Privilege escalation
+    'paru'                           # AUR helper
+
+    # --- CachyOS Specific Framework ---
+    'cachy-update'                   # System update orchestration
+    'cachyos-hooks'                  # System maintenance hooks
+    'cachyos-keyring'                # Package signing keys
+    'cachyos-settings'               # CachyOS system configurations
+    'cachyos-snapper-support'        # Filesystem snapshot integration
+    'limine-snapper-sync'            # Bootloader/snapshot integration
+
+    # --- Repository Management ---
+    'cachyos-mirrorlist'             # Default mirrors
+    'cachyos-v3-mirrorlist'          # Optimized v3 repositories
+    'cachyos-v4-mirrorlist'          # Optimized v4 repositories
+    'cachyos-rate-mirrors'           # Speed-based mirror ranking
+    'reflector'                      # Official mirror list manager
+
+    # --- Boot & Display Visuals ---
+    'cachyos-plymouth-bootanimation' # Boot screen animation
+    'cachyos-plymouth-theme'         # Boot screen theme
+
+    # --- Kernel & Hardware Drivers ---
+    'intel-ucode'                    # Intel CPU microcode updates
+    'sof-firmware'                   # Sound Open Firmware for modern audio
+    'linux-cachyos-headers'          # Kernel development headers
+    'linux-cachyos-lts-headers'      # LTS Kernel development headers
+    'linux-cachyos-nvidia-open'      # Open-source Nvidia driver (main kernel)
+    'linux-cachyos-lts-nvidia-open'  # Open-source Nvidia driver (LTS kernel)
+
+    # --- Hardware Management & Power ---
+    'bluez-utils'                    # Bluetooth protocol stack
+    'cpupower'                       # CPU power management utility
+    'libva-nvidia-driver'            # VA-API hardware video acceleration
+    'nvidia-prime'                   # GPU switching/hybrid graphics management
+
+    # --- System Security & Maintenance ---
+    'networkmanager'                 # Network connectivity daemon
+    'ufw'                            # Uncomplicated Firewall
+    'logrotate'                      # Automatic system log management
+    'rebuild-detector'               # AUR package dependency tracker
+    'unrar'                          # Archive extraction utility
+)
+
+package() {
+    # Meta-package: no files to install
+    true
+}

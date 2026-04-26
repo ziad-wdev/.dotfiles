@@ -1,0 +1,8 @@
+#!/bin/bash
+
+# Nautilus passes the current directory path as $NAUTILUS_SCRIPT_CURRENT_URI
+# We strip the 'file://' prefix and decode URL characters (like %20 for spaces)
+target_dir=$(echo "$NAUTILUS_SCRIPT_CURRENT_URI" | sed 's/file:\/\///' | python3 -c "import sys, urllib.parse; print(urllib.parse.unquote(sys.stdin.read().strip()))")
+
+# Launch Ghostty in that directory
+ghostty --working-directory="$target_dir" &

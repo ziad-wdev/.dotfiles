@@ -1,5 +1,10 @@
 {
   "agent": {
+    "default_model": {
+      "provider": "google",
+      "model": "gemini-3-flash-preview",
+      "enable_thinking": false
+    },
     "default_height": 400,
     "default_profile": "write",
     "default_width": 400,
@@ -47,7 +52,7 @@
   "preferred_line_length": 120,
   "prettier": {
     "allowed": true,
-    "plugins": ["@ianvs/prettier-plugin-sort-imports", "prettier-plugin-sort-json", "prettier-plugin-tailwindcss"],
+    "plugins": ["@ianvs/prettier-plugin-sort-imports", "prettier-plugin-tailwindcss"],
   },
   "project_panel": {
     "auto_fold_dirs": false,
@@ -87,7 +92,7 @@
   },
   "theme": {
     "dark": "Catppuccin Mocha",
-    "light": "Catppuccin Latte",
+    "light": "Ayu Light",
     "mode": "dark",
   },
   "theme_overrides": {
