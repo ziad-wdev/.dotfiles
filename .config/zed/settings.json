@@ -1,0 +1,141 @@
+{
+  "agent": {
+    "default_height": 400,
+    "default_profile": "write",
+    "default_width": 400,
+  },
+  "autosave": {
+    "after_delay": {
+      "milliseconds": 1000,
+    },
+  },
+  "buffer_font_family": "JetBrainsMono Nerd Font",
+  "buffer_font_features": {
+    "calt": false,
+  },
+  "buffer_font_size": 16,
+  "collaboration_panel": {
+    "default_width": 400,
+  },
+  "colorize_brackets": true,
+  "diagnostics": {
+    "inline": {
+      "enabled": true,
+    },
+  },
+  "git_panel": {
+    "default_width": 400,
+    "tree_view": true,
+  },
+  "icon_theme": "Warm Charmed Icons",
+  "indent_guides": {
+    "active_line_width": 2,
+    "coloring": "indent_aware",
+    "line_width": 2,
+  },
+  "minimap": {
+    "show": "auto",
+    "thumb": "always",
+    "thumb_border": "none",
+  },
+  "outline_panel": {
+    "default_width": 400,
+    "indent_guides": {
+      "show": "never",
+    },
+  },
+  "preferred_line_length": 120,
+  "prettier": {
+    "allowed": true,
+    "plugins": ["@ianvs/prettier-plugin-sort-imports", "prettier-plugin-sort-json", "prettier-plugin-tailwindcss"],
+  },
+  "project_panel": {
+    "auto_fold_dirs": false,
+    "default_width": 400,
+    "hide_root": true,
+    "indent_guides": {
+      "show": "never",
+    },
+    "scrollbar": {
+      "show": "never",
+    },
+  },
+  "restore_on_startup": "launchpad",
+  "scrollbar": {
+    "axes": {
+      "horizontal": false,
+      "vertical": false,
+    },
+  },
+  "session": {
+    "trust_all_worktrees": true,
+  },
+  "show_wrap_guides": false,
+  "soft_wrap": "bounded",
+  "tab_bar": {
+    "show": false,
+    "show_nav_history_buttons": false,
+  },
+  "tab_size": 2,
+  "telemetry": {
+    "diagnostics": false,
+    "metrics": false,
+  },
+  "terminal": {
+    "cursor_shape": "block",
+    "default_height": 400,
+  },
+  "theme": {
+    "dark": "Catppuccin Mocha",
+    "light": "Catppuccin Latte",
+    "mode": "dark",
+  },
+  "theme_overrides": {
+    // colors: lightest #1E1E2E > darker #171725 > darkest #11111B > accent #CBA6F7
+    "Catppuccin Mocha": {
+      "background": "#1E1E2E",
+      "border": "#11111B",
+      "border.variant": "#1E1E2E",
+      "editor.background": "#1E1E2E",
+      "editor.gutter.background": "#1E1E2E",
+      "link_text.hover": "#CBA6F7",
+      "minimap.thumb.active_background": "#CBA6F74D",
+      "minimap.thumb.background": "#CBA6F733",
+      "minimap.thumb.hover_background": "#CBA6F740",
+      "panel.background": "#1E1E2E",
+      "panel.focused_border": "#11111B",
+      "players": [
+        {
+          "background": "CBA6F74D",
+          "cursor": "#CBA6F7",
+          "selection": "CBA6F74D",
+        },
+      ],
+      "status_bar.background": "#171725",
+      "syntax": {
+        "comment": {
+          "color": "#CBA6F7",
+          "font_style": "italic",
+          "font_weight": 600,
+        },
+        "comment.doc": {
+          "color": "#CBA6F7",
+          "font_style": "italic",
+          "font_weight": 600,
+        },
+      },
+      "tab_bar.background": "#171725",
+      "tab.active_background": "#1E1E2E",
+      "tab.inactive_background": "#171725",
+      "terminal.background": "#1E1E2E",
+      "title_bar.background": "#171725",
+      "title_bar.inactive_background": "#171725",
+      "toolbar.background": "#1E1E2E",
+    },
+  },
+  "toolbar": {
+    "selections_menu": false,
+  },
+  "ui_font_family": "Noto Sans",
+  "ui_font_size": 20,
+}
