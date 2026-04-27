@@ -1,0 +1,31 @@
+pkgname=00-meta-ricing
+pkgver=1.0
+pkgrel=1
+pkgdesc="Meta-package for personal Hyprland ricing setup"
+arch=('any')
+
+depends=(
+    # --- Desktop Environment & Compositor ---
+    'hyprpolkitagent'               # Polkit agent for Wayland
+    'hyprland'                      # Wayland compositor
+    'hyprlock'                      # Screen locking
+    'hypridle'                      # Idle management
+    'hyprpicker'                    # Color picker
+    'hyprshot'                      # Screenshot tool
+    'aylurs-gtk-shell-git'          # GTK shell integration
+    'wlogout'                       # Logout menu
+    'sddm'                          # Display manager
+    'rofi'                          # Application launcher
+    'awww'                          # Wallpaper manager
+    'matugen'                       # Color theme generator
+    'stow'                          # Dotfile manager
+    'ghostty'                       # Terminal emulator
+    'micro'                         # Text editor
+    'nautilus'                      # File manager
+    'ttf-jetbrains-mono-nerd'       # Nerd font
+)
+
+package() {
+    # Meta-package: no files to install
+    true
+}

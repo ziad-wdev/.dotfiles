@@ -43,7 +43,7 @@ output_path = '~/.config/vesktop/themes/matugen-discord.css'
 [templates.spotify]
 input_path = '~/.config/matugen/templates/matugen-spicetify.ini'
 output_path = '~/.config/spicetify/Themes/Sleek/color.ini'
-post_hook = 'spicetify apply --silent'
+post_hook = 'spicetify apply --no-restart'
 
 [templates.steam]
 input_path = '~/.config/matugen/templates/matugen-steam.css'
