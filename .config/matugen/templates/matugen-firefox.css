@@ -1,0 +1,45 @@
+:root {
+<* for name, value in colors *>
+    --{{name}}: {{value.default.hex}};
+<* endfor *>
+
+<* for name, value in colors *>
+    --{{name}}_rgb: {{value.default.red}} {{value.default.green}} {{value.default.blue}};
+<* endfor *>
+
+	/* Map Matugen colors to Firefox GNOME Theme variables */
+    
+    /* Accents */
+    --gnome-accent-bg: var(--primary) !important;
+    --gnome-accent: var(--primary) !important;
+
+    /* Window & Backgrounds */
+    --gnome-window-background: var(--background) !important;
+    --gnome-window-color: var(--on_background) !important;
+    --gnome-view-background: var(--surface) !important;
+    --gnome-view-color: var(--on_surface) !important;
+
+    /* Header & Toolbars */
+    --gnome-headerbar-background: var(--surface_container) !important;
+    --gnome-toolbar-background: var(--surface_container) !important;
+
+    /* Sidebars */
+    --gnome-sidebar-background: var(--surface_container_low) !important;
+    --gnome-secondary-sidebar-background: var(--surface_container_lowest) !important;
+
+    /* Tabs */
+    --gnome-tabbar-background: var(--surface_container) !important;
+    --gnome-tabbar-tab-hover-background: var(--surface_container_high) !important;
+    --gnome-tabbar-tab-active-background: var(--surface_variant) !important;
+    --gnome-tabbar-tab-active-background-contrast: var(--surface_container_highest) !important;
+    --gnome-tabbar-tab-active-hover-background: var(--surface_container_highest) !important;
+
+    /* Menus & Cards */
+    --gnome-menu-background: var(--surface_container_high) !important;
+    --gnome-menu-color: var(--on_surface) !important;
+    --gnome-card-background: var(--surface_container) !important;
+
+    /* Status Colors */
+    --gnome-destructive-bg: var(--error) !important;
+    --gnome-error-bg: var(--error) !important;
+}

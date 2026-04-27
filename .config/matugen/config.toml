@@ -7,16 +7,16 @@ version_check = false
 
 [templates.gtk3]
 input_path = '~/.config/matugen/templates/matugen-gtk.css'
-output_path = '~/.config/gtk-3.0/colors.css'
+output_path = '~/.config/gtk-3.0/matugen-colors.css'
 post_hook = 'gsettings set org.gnome.desktop.interface gtk-theme ""; gsettings set org.gnome.desktop.interface gtk-theme adw-gtk3-dark'
 
 [templates.gtk4]
 input_path = '~/.config/matugen/templates/matugen-gtk.css'
-output_path = '~/.config/gtk-4.0/colors.css'
+output_path = '~/.config/gtk-4.0/matugen-colors.css'
 
 [templates.hyprland]
 input_path = '~/.config/matugen/templates/matugen-hyprland.conf'
-output_path = '~/.config/hypr/hyprland-colors.conf'
+output_path = '~/.config/hypr/matugen-colors.conf'
 post_hook = 'hyprctl reload &> /dev/null'
 
 [templates.ghostty]
@@ -26,11 +26,11 @@ post_hook = 'pkill -SIGUSR2 ghostty'
 
 [templates.rofi]
 input_path = '~/.config/matugen/templates/matugen-rofi.rasi'
-output_path = '~/.config/rofi/colors.rasi'
+output_path = '~/.config/rofi/matugen-colors.rasi'
 
 [templates.wlogout]
 input_path = '~/.config/matugen/templates/matugen-colors.css'
-output_path = '~/.config/wlogout/colors.css'
+output_path = '~/.config/wlogout/matugen-colors.css'
 
 [templates.zed]
 input_path = '~/.config/matugen/templates/matugen-zed.json'
@@ -42,10 +42,14 @@ output_path = '~/.config/vesktop/themes/matugen-discord.css'
 
 [templates.spotify]
 input_path = '~/.config/matugen/templates/matugen-spicetify.ini'
-output_path = '~/.config/spicetify/Themes/Sleek/color.ini'
+output_path = '~/.config/spicetify/Themes/Matugen/color.ini'
 post_hook = 'spicetify apply --no-restart'
 
 [templates.steam]
 input_path = '~/.config/matugen/templates/matugen-steam.css'
 output_path = '~/.var/app/io.github.Foldex.AdwSteamGtk/config/AdwSteamGtk/custom.css'
 post_hook = 'flatpak run io.github.Foldex.AdwSteamGtk -i'
+
+ [templates.firefox-website-colors]
+ input_path = "~/.config/matugen/templates/matugen-firefox.css"
+ output_path = "~/.config/mozilla/firefox/jb8dm8di.default-release/chrome/matugen-colors.css"
