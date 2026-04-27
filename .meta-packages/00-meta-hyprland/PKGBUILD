@@ -1,0 +1,31 @@
+pkgname=00-meta-hyprland
+pkgver=1.0
+pkgrel=1
+pkgdesc="Comprehensive meta-package for hyprland essentials"
+arch=('any')
+
+depends=(
+	'hyprpolkitagent'
+	'hyprland'
+	'hyprlock'
+	'hypridle'
+	'hyprshot'
+	'hyprpicker'
+	'sddm'
+	'wlogout'
+	'matugen'
+	'awww'
+	'rofi'
+	'aylurs-gtk-shell-git'
+
+	'nwg-look'
+	'ghostty'
+	'nautilus'
+	'micro'
+	'stow'
+)
+
+package() {
+    # Meta-package: no files to install
+    true
+}

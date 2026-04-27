@@ -22,7 +22,11 @@ function wal
         awww img "$argv[1]" --transition-type random
         
         # 2. Sync with Matugen
-        matugen image "$argv[1]"
+        # Determine mode: default to dark, or check a variable
+        set -l mode (test "$THEME_MODE" = "light"; and echo "light"; or echo "dark")
+                
+        # Run matugen with the mode
+        matugen image "$argv[1]" -m $mode
         
         # 3. Update symlink for hyprlock
         ln -sf (realpath "$argv[1]") /tmp/current_wallpaper.png
