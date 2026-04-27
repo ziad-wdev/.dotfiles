@@ -15,3 +15,20 @@ end
 function qet
     pacman -Qet
 end
+
+function wal
+    if test -f "$argv[1]"
+        # 1. Set wallpaper
+        awww img "$argv[1]" --transition-type random
+        
+        # 2. Sync with Matugen
+        matugen image "$argv[1]"
+        
+        # 3. Update symlink for hyprlock
+        ln -sf (realpath "$argv[1]") /tmp/current_wallpaper.png
+        
+        echo "Wallpaper and theme updated successfully!"
+    else
+        echo "Usage: change_wallpaper <path_to_image>"
+    end
+end
