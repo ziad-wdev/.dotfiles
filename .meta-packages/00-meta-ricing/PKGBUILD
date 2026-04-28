@@ -5,24 +5,26 @@ pkgdesc="Meta-package for personal Hyprland ricing setup"
 arch=('any')
 
 depends=(
-    # --- Desktop Environment & Compositor ---
-    'hyprpolkitagent'               # Polkit agent for Wayland
-    'hyprland'                      # Wayland compositor
-    'hyprlock'                      # Screen locking
-    'hypridle'                      # Idle management
-    'hyprpicker'                    # Color picker
-    'hyprshot'                      # Screenshot tool
-    'aylurs-gtk-shell-git'          # GTK shell integration
-    'wlogout'                       # Logout menu
-    'sddm'                          # Display manager
-    'rofi'                          # Application launcher
-    'awww'                          # Wallpaper manager
-    'matugen'                       # Color theme generator
-    'stow'                          # Dotfile manager
-    'ghostty'                       # Terminal emulator
-    'micro'                         # Text editor
-    'nautilus'                      # File manager
-    'ttf-jetbrains-mono-nerd'       # Nerd font
+    # --- Compositor & Session Management ---
+    'hyprland'                       # Dynamic Wayland compositor
+    'hyprpolkitagent'                # Polkit authentication agent for Wayland
+    'hypridle'                       # Wayland idle management daemon
+    'hyprlock'                       # Wayland screen locking utility
+    'sddm'                           # Display manager for login
+
+    # --- Desktop Components & Shell ---
+    'aylurs-gtk-shell-git'           # Customizable GTK-based shell
+
+    # --- Theming & Appearance ---
+    'awww'                           # Animated wallpaper manager
+    'matugen'                        # Material Design color theme generator
+    'ttf-jetbrains-mono-nerd'        # Monospaced font with developer icons
+
+    # --- Core Applications & System Tools ---
+    'ghostty'                        # GPU-accelerated terminal emulator
+    'nautilus'                       # Default GNOME file manager
+    'micro'                          # Modern and intuitive text editor
+    'stow'                           # Symlink farm manager for dotfiles
 )
 
 package() {

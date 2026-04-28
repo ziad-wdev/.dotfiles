@@ -8,7 +8,7 @@
 <* endfor *>
 
 	/* Map Matugen colors to Firefox GNOME Theme variables */
-    
+
     /* Accents */
     --gnome-accent-bg: var(--primary) !important;
     --gnome-accent: var(--primary) !important;

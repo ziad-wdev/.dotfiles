@@ -4,7 +4,7 @@
     "default_model": {
       "provider": "google",
       "model": "gemini-3-flash-preview",
-      "enable_thinking": false
+      "enable_thinking": false,
     },
     "default_height": 400,
     "default_profile": "write",
@@ -36,7 +36,7 @@
   "icon_theme": {
     "mode": "light",
     "light": "Warm Charmed Icons",
-    "dark": "Warm Charmed Icons"
+    "dark": "Warm Charmed Icons",
   },
   "indent_guides": {
     "active_line_width": 2,
@@ -83,7 +83,6 @@
   "show_wrap_guides": false,
   "soft_wrap": "bounded",
   "tab_bar": {
-    "show": false,
     "show_nav_history_buttons": false,
   },
   "tab_size": 2,
@@ -144,6 +143,7 @@
     },
   },
   "toolbar": {
+    "breadcrumbs": true,
     "selections_menu": false,
   },
   "ui_font_family": "Noto Sans",
