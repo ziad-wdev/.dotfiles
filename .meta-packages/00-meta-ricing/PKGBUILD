@@ -8,12 +8,20 @@ depends=(
     # --- Compositor & Session Management ---
     'hyprland'                       # Dynamic Wayland compositor
     'hyprpolkitagent'                # Polkit authentication agent for Wayland
-    'hypridle'                       # Wayland idle management daemon
     'hyprlock'                       # Wayland screen locking utility
+    'hypridle'                       # Wayland idle management daemon
     'sddm'                           # Display manager for login
 
     # --- Desktop Components & Shell ---
     'aylurs-gtk-shell-git'           # Customizable GTK-based shell
+    'libastal-meta'                  # Libastal meta package
+
+    # --- Utilities ---
+    'hyprpicker'                     # Wayland color picker utility
+    'hyprshot'                       # Wayland screenshot utility
+    'wf-recorder'                    # Wayland screen recorder utility
+    'wl-clipboard'                   # Wayland clipboard utility
+    'brightnessctl'                  # Brightness control utility
 
     # --- Theming & Appearance ---
     'awww'                           # Animated wallpaper manager
@@ -22,6 +30,7 @@ depends=(
 
     # --- Core Applications & System Tools ---
     'ghostty'                        # GPU-accelerated terminal emulator
+    'ghostty-nautilus'               # Ghostty integration for Nautilus
     'nautilus'                       # Default GNOME file manager
     'micro'                          # Modern and intuitive text editor
     'stow'                           # Symlink farm manager for dotfiles

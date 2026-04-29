@@ -1,0 +1,26 @@
+$accent: #{"@accent_bg_color"};
+$on-accent: #{"@accent_fg_color"};
+$bg: #{"@window_bg_color"};
+$on-bg: #{"@window_fg_color"};
+
+$roundedness: 2px;
+$outer-margin: 12px;
+$inner-margin: 6px;
+
+window.Bar {
+  font-family: "JetBrainsMono Nerd Font";
+  background: transparent;
+  color: $on-bg;
+  font-weight: bold;
+
+  > centerbox {
+    background: $bg;
+    border-radius: $roundedness;
+    margin: $outer-margin;
+  }
+
+  button {
+    border-radius: 8px;
+    margin: 2px;
+  }
+}

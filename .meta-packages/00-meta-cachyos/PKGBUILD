@@ -40,7 +40,8 @@ depends=(
     'linux-cachyos-lts-nvidia-open'  # Open-source Nvidia driver (LTS kernel)
 
     # --- Hardware Management & Power ---
-    'bluez-utils'                    # Bluetooth protocol stack
+    'bluez'                          # Bluetooth protocol stack
+    'bluez-utils'                    # Bluetooth utilities
     'cpupower'                       # CPU power management utility
     'libva-nvidia-driver'            # VA-API hardware video acceleration
     'nvidia-prime'                   # GPU switching/hybrid graphics management

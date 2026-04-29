@@ -1,7 +1,7 @@
 /*-----Surface Transparent Background------*/
 @define-color surface-alpha {{colors.surface.default.rgba | set_alpha: 0.5}};
 
-/*-----All Colors--------*/
+/*-----All Matugen Colors--------*/
 <* for name, value in colors *>
 @define-color {{name}} {{value.default.hex}};
 <* endfor *>

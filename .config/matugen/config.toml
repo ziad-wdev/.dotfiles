@@ -24,10 +24,6 @@ input_path = '~/.config/matugen/templates/matugen-ghostty'
 output_path = '~/.config/ghostty/themes/Matugen'
 post_hook = 'pkill -SIGUSR2 ghostty'
 
-[templates.ags]
-input_path = '~/.config/matugen/templates/matugen-colors.css'
-output_path = '~/.config/ags/matugen-colors.conf'
-
 [templates.zed]
 input_path = '~/.config/matugen/templates/matugen-zed.json'
 output_path = '~/.config/zed/themes/matugen.json'
