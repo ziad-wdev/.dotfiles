@@ -61,7 +61,7 @@ $orange: #{"mix(@primary , #FD7E14 , 0.5)"};
   $font-size: 20px;
   font-size: $font-size;
   padding-left: $padding * $side-padding-multiplier;
-  padding-right: $padding * $side-padding-multiplier + (1/7) * $font-size;
+  padding-right: $padding * $side-padding-multiplier + calc(1 / 7) * $font-size;
 }
 
 /* workspaces */

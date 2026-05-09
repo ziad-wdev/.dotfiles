@@ -5,6 +5,8 @@ CACHE_DIR="$DIR/.cache/rofi_wallpapers"
 mkdir -p "$CACHE_DIR"
 
 set_wallpaper() {
+    cp "$1" "/tmp/current_wallpaper" &
+
     awww img "$1" --transition-type random &
     matugen image "$1" --prefer lightness &
 }
