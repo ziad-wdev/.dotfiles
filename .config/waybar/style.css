@@ -1,0 +1,126 @@
+@import "colors.css";
+* {
+  color: @on_surface;
+  padding: 0;
+  margin: 0;
+  min-width: 0;
+  min-height: 0;
+  transition: all 0.3s ease;
+}
+
+#waybar {
+  background-color: transparent;
+}
+
+/* globals */
+#custom-menu,
+#workspaces,
+#clock,
+#tray,
+#wireplumber,
+#bluetooth,
+#network,
+#battery {
+  border-radius: 24px;
+  background-color: @surface;
+  border: 1px solid @surface_container_low;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+/* hover effect for interactive elements */
+#custom-menu:hover,
+#wireplumber:hover,
+#bluetooth:hover,
+#network:hover {
+  background-color: @surface_container_low;
+}
+
+/* fix center alignment for custom menu */
+#custom-menu {
+  font-size: 20px;
+  padding-left: 16px;
+  padding-right: 18.8571428571px;
+}
+
+/* workspaces */
+#workspaces {
+  /* workspace padding controls all other elements' padding */
+  padding: 4px;
+}
+#workspaces button {
+  border-radius: 20px;
+  background-color: @surface_container_lowest;
+  border: 1px solid @surface_container_low;
+  min-width: 24px;
+}
+#workspaces button:hover {
+  background-color: @surface_container_low;
+}
+#workspaces button:not(:last-child) {
+  margin-right: 4px;
+}
+#workspaces button.visible {
+  background-color: @primary;
+  border: 1px solid transparent;
+  min-width: 64px;
+}
+#workspaces button.visible:hover {
+  background-color: darker(@primary);
+}
+#workspaces label {
+  color: transparent;
+}
+#workspaces button.visible label {
+  color: @on_primary;
+}
+
+#battery {
+  color: mix(@primary , #28A745 , 0.5);
+}
+
+#network {
+  color: mix(@primary , #DC3545 , 0.5);
+}
+
+#bluetooth {
+  color: mix(@primary , #007BFF , 0.5);
+}
+
+#wireplumber {
+  color: mix(@primary , #FD7E14 , 0.5);
+}
+
+/* tray */
+#tray menu {
+  background-color: @surface;
+  border: 1px solid @surface_container_low;
+  padding: 8px;
+}
+
+#tray separator {
+  border: 1px solid @surface_container_low;
+  margin-bottom: 4px;
+}
+
+#tray menuitem {
+  border-radius: 8px;
+  background-color: @surface;
+  padding: 4px;
+}
+
+#tray menuitem:not(:last-child) {
+  margin-bottom: 4px;
+}
+
+#tray menuitem:hover {
+  background-color: @primary;
+}
+
+#tray menuitem:hover label {
+  color: @on_primary;
+}
+
+
+
+/*# sourceMappingURL=style.css.map */

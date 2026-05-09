@@ -50,18 +50,10 @@ headerbar.default-decoration windowcontrols.end {
 }
 .background.chromium selection, .background.chromium selection:focus {
   background-color: color-mix(in srgb, var(--accent-bg-color) 30%, transparent);
-}
-@media (prefers-color-scheme: dark) {
-  .background.chromium selection, .background.chromium selection:focus {
-    background-color: var(--accent-bg-color);
-  }
-}
-.background.chromium selection, .background.chromium selection:focus {
   color: var(--accent-fg-color);
 }
 .background.chromium windowcontrols > button {
   background-color: color-mix(in srgb, currentColor 10%, transparent);
-  color: var(--window-fg-color);
   min-width: 24px;
   padding: 0;
   box-shadow: none;

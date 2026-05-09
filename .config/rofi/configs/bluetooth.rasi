@@ -1,0 +1,7 @@
+/*****----- Theme -----*****/
+@theme "global-theme.rasi"
+
+/*****----- Configuration -----*****/
+configuration {
+    show-icons: false;
+}

@@ -49,7 +49,7 @@
 @define-color destructive_fg_color white;
 @define-color success_bg_color @green_5;
 @define-color success_fg_color white;
-@define-color warning_bg_color @yellow_5;
+@define-color warning_bg_color #c01c28;
 @define-color warning_fg_color rgba(0,0,0,0.8);
 @define-color error_bg_color @red_4;
 @define-color error_fg_color white;

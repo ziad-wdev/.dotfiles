@@ -1,0 +1,25 @@
+/*****----- Theme -----*****/
+@theme "global-theme.rasi"
+
+/*****----- Configuration -----*****/
+configuration {
+}
+
+/*****----- Styles -----*****/
+listview {
+    flow: horizontal;
+    columns: 4;
+    lines: 3;
+}
+
+element {
+    orientation: vertical;
+}
+
+element-icon {
+    size: 160px;
+}
+
+element-text {
+    horizontal-align: 0.5;
+}

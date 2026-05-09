@@ -12,9 +12,10 @@ depends=(
     'hypridle'                       # Wayland idle management daemon
     'sddm'                           # Display manager for login
 
-    # --- Desktop Components & Shell ---
-    'aylurs-gtk-shell-git'           # Customizable GTK-based shell
-    'libastal-meta'                  # Libastal meta package
+    # --- Desktop Components ---
+    'wlogout'                        # Logout window for Wayland
+    'waybar'                         # Wayland status bar
+    'rofi'                           # Wayland application launcher
 
     # --- Utilities ---
     'hyprpicker'                     # Wayland color picker utility
@@ -29,6 +30,7 @@ depends=(
     'ttf-jetbrains-mono-nerd'        # Monospaced font with developer icons
 
     # --- Core Applications & System Tools ---
+    'nwg-look'                       # GTK theme manager
     'ghostty'                        # GPU-accelerated terminal emulator
     'ghostty-nautilus'               # Ghostty integration for Nautilus
     'nautilus'                       # Default GNOME file manager

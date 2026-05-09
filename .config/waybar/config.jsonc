@@ -1,0 +1,92 @@
+{
+  "layer": "top",
+  "position": "top",
+  "spacing": 8,
+  "margin-left": 16,
+  "margin-right": 16,
+  "margin-top": 16,
+  "margin-bottom": 0,
+  "reload_style_on_change": true,
+
+  "modules-left": ["custom/menu", "hyprland/workspaces"],
+  "modules-center": ["clock"],
+  "modules-right": ["tray", "wireplumber", "bluetooth", "network", "battery"],
+
+  // left
+  "custom/menu": {
+    "format": "",
+    "on-click": "rofi -show drun",
+    "tooltip": false,
+  },
+
+  "hyprland/workspaces": {
+    "format": "{icon}",
+    "all-outputs": true,
+    "persistent-workspaces": {
+      "*": [1, 2, 3, 4, 5],
+    },
+    "format-icons": {
+      "1": "1",
+      "2": "2",
+      "3": "3",
+      "4": "4",
+      "5": "5",
+      "default": "",
+    },
+    "tooltip": false,
+  },
+
+  // center
+  "clock": {
+    "format": "{:%m %a %I:%M %p}",
+    "tooltip": false,
+  },
+
+  // right
+  "wireplumber": {
+    "format": "{icon}   {volume}%",
+    "format-muted": "󰝟",
+    "format-icons": ["󰕿", "󰖀", "󰕾"],
+    "on-click": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
+    "max-volume": 200,
+    "scroll-step": 5,
+    "tooltip": false,
+  },
+
+  "bluetooth": {
+    "format-on": "󰂯",
+    "format-off": "󰂲",
+    "format-disabled": "󰂲",
+    "format-connected": "󰂯   {device_alias}",
+    "format-connected-battery": "   {device_alias} {device_battery_percentage}%",
+    "on-click": "~/.config/rofi/scripts/rofi-bluetooth.sh",
+    "tooltip": false,
+  },
+
+  "network": {
+    "format-wifi": "{icon}   {essid}",
+    "format-ethernet": "󰈀    {essid}",
+    "format-disabled": "󰤭    Disabled",
+    "format-disconnected": "󰤭    Disconnected",
+    "format-icons": ["󰤯 ", "󰤟 ", "󰤢 ", "󰤥 ", "󰤨 "],
+    "on-click": "~/.config/rofi/scripts/rofi-network.sh",
+    "tooltip": false,
+  },
+
+  "battery": {
+    "format": "{icon}   {capacity}%",
+    // "format-icons": {
+    //  "default": ["󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
+    //  "charging": ["󰂎 ", "󰁺 ", "󰁻 ", "󰁼 ", "󰁽 ", "󰁿 ", "󰂀 ", "󰂁 ", "󰂂 ", "󰁹 "],
+    // },
+    "format-icons": {
+      "default": [" ", " ", " ", " ", " "],
+      "charging": ["  ", "  ", "  ", "  ", "  "],
+    },
+    "states": {
+      "warning": 30,
+      "critical": 15,
+    },
+    "tooltip": false,
+  },
+}

@@ -1,0 +1,152 @@
+@import "colors.css";
+
+$rounding: 24px;
+$padding: 4px;
+$side-padding-multiplier: 4;
+
+$primary: #{"@primary"};
+$primary-hover: #{"darker(@primary)"};
+
+$bg: #{"@surface"};
+$bg-darker: #{"@surface_container_lowest"};
+$bg-lighter: #{"@surface_container_low"};
+
+$fg: #{"@on_surface"};
+$fg-primary: #{"@on_primary"};
+
+$green: #{"mix(@primary , #28A745 , 0.5)"};
+$red: #{"mix(@primary , #DC3545 , 0.5)"};
+$blue: #{"mix(@primary , #007BFF , 0.5)"};
+$orange: #{"mix(@primary , #FD7E14 , 0.5)"};
+
+* {
+  color: $fg;
+  padding: 0;
+  margin: 0;
+  min-width: 0;
+  min-height: 0;
+  transition: all 0.3s ease;
+}
+
+#waybar {
+  background-color: transparent;
+}
+
+/* globals */
+#custom-menu,
+#workspaces,
+#clock,
+#tray,
+#wireplumber,
+#bluetooth,
+#network,
+#battery {
+  border-radius: $rounding;
+  background-color: $bg;
+  border: 1px solid $bg-lighter;
+  padding-left: $padding * $side-padding-multiplier;
+  padding-right: $padding * $side-padding-multiplier;
+}
+
+/* hover effect for interactive elements */
+#custom-menu:hover,
+#wireplumber:hover,
+#bluetooth:hover,
+#network:hover {
+  background-color: $bg-lighter;
+}
+
+/* fix center alignment for custom menu */
+#custom-menu {
+  $font-size: 20px;
+  font-size: $font-size;
+  padding-left: $padding * $side-padding-multiplier;
+  padding-right: $padding * $side-padding-multiplier + (1/7) * $font-size;
+}
+
+/* workspaces */
+#workspaces {
+  /* workspace padding controls all other elements' padding */
+  padding: $padding;
+
+  button {
+    border-radius: max($rounding - $padding, $rounding / 2);
+    background-color: $bg-darker;
+    border: 1px solid $bg-lighter;
+    min-width: 24px;
+  }
+
+  button:hover {
+    background-color: $bg-lighter;
+  }
+
+  button:not(:last-child) {
+    margin-right: $padding;
+  }
+
+  button.visible {
+    background-color: $primary;
+    border: 1px solid transparent;
+    min-width: 64px;
+  }
+
+  button.visible:hover {
+    background-color: $primary-hover;
+  }
+
+  label {
+    color: transparent;
+  }
+
+  button.visible label {
+    color: $fg-primary;
+  }
+}
+
+#battery {
+  color: $green;
+}
+
+#network {
+  color: $red;
+}
+
+#bluetooth {
+  color: $blue;
+}
+
+#wireplumber {
+  color: $orange;
+}
+
+/* tray */
+#tray menu {
+  background-color: $bg;
+  border: 1px solid $bg-lighter;
+  padding: $padding * 2;
+}
+
+#tray separator {
+  border: 1px solid $bg-lighter;
+  margin-bottom: $padding;
+}
+
+#tray menuitem {
+  border-radius: $padding * 2;
+  background-color: $bg;
+  padding: $padding;
+}
+
+#tray menuitem:not(:last-child) {
+  margin-bottom: $padding;
+}
+
+#tray menuitem:hover {
+  background-color: $primary;
+}
+
+#tray menuitem:hover label {
+  color: $fg-primary;
+}
+
+/*# sourceMappingURL=style.css.map */

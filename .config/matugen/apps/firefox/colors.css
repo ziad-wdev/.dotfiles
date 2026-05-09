@@ -1,0 +1,241 @@
+:root {
+
+    --background: #191114;
+
+    --error: #ffb4ab;
+
+    --error_container: #93000a;
+
+    --inverse_on_surface: #372e31;
+
+    --inverse_primary: #884b6a;
+
+    --inverse_surface: #eedfe3;
+
+    --on_background: #eedfe3;
+
+    --on_error: #690005;
+
+    --on_error_container: #ffdad6;
+
+    --on_primary: #521d3b;
+
+    --on_primary_container: #ffd8e8;
+
+    --on_primary_fixed: #380725;
+
+    --on_primary_fixed_variant: #6d3352;
+
+    --on_secondary: #402a34;
+
+    --on_secondary_container: #fdd9e7;
+
+    --on_secondary_fixed: #29151f;
+
+    --on_secondary_fixed_variant: #59404b;
+
+    --on_surface: #eedfe3;
+
+    --on_surface_variant: #d4c2c8;
+
+    --on_tertiary: #4a2811;
+
+    --on_tertiary_container: #ffdbc8;
+
+    --on_tertiary_fixed: #301401;
+
+    --on_tertiary_fixed_variant: #643e25;
+
+    --outline: #9d8d92;
+
+    --outline_variant: #504348;
+
+    --primary: #fdb0d4;
+
+    --primary_container: #6d3352;
+
+    --primary_fixed: #ffd8e8;
+
+    --primary_fixed_dim: #fdb0d4;
+
+    --scrim: #000000;
+
+    --secondary: #e0bdcb;
+
+    --secondary_container: #59404b;
+
+    --secondary_fixed: #fdd9e7;
+
+    --secondary_fixed_dim: #e0bdcb;
+
+    --shadow: #000000;
+
+    --source_color: #f4bfd6;
+
+    --surface: #191114;
+
+    --surface_bright: #40373a;
+
+    --surface_container: #251d21;
+
+    --surface_container_high: #30282b;
+
+    --surface_container_highest: #3b3236;
+
+    --surface_container_low: #21191d;
+
+    --surface_container_lowest: #130c0f;
+
+    --surface_dim: #191114;
+
+    --surface_tint: #fdb0d4;
+
+    --surface_variant: #504348;
+
+    --tertiary: #f2bb9a;
+
+    --tertiary_container: #643e25;
+
+    --tertiary_fixed: #ffdbc8;
+
+    --tertiary_fixed_dim: #f2bb9a;
+
+
+
+    --background_rgb: 25 17 20;
+
+    --error_rgb: 255 180 171;
+
+    --error_container_rgb: 147 0 10;
+
+    --inverse_on_surface_rgb: 55 46 49;
+
+    --inverse_primary_rgb: 136 75 106;
+
+    --inverse_surface_rgb: 238 223 227;
+
+    --on_background_rgb: 238 223 227;
+
+    --on_error_rgb: 105 0 5;
+
+    --on_error_container_rgb: 255 218 214;
+
+    --on_primary_rgb: 82 29 59;
+
+    --on_primary_container_rgb: 255 216 232;
+
+    --on_primary_fixed_rgb: 56 7 37;
+
+    --on_primary_fixed_variant_rgb: 109 51 82;
+
+    --on_secondary_rgb: 64 42 52;
+
+    --on_secondary_container_rgb: 253 217 231;
+
+    --on_secondary_fixed_rgb: 41 21 31;
+
+    --on_secondary_fixed_variant_rgb: 89 64 75;
+
+    --on_surface_rgb: 238 223 227;
+
+    --on_surface_variant_rgb: 212 194 200;
+
+    --on_tertiary_rgb: 74 40 17;
+
+    --on_tertiary_container_rgb: 255 219 200;
+
+    --on_tertiary_fixed_rgb: 48 20 1;
+
+    --on_tertiary_fixed_variant_rgb: 100 62 37;
+
+    --outline_rgb: 157 141 146;
+
+    --outline_variant_rgb: 80 67 72;
+
+    --primary_rgb: 253 176 212;
+
+    --primary_container_rgb: 109 51 82;
+
+    --primary_fixed_rgb: 255 216 232;
+
+    --primary_fixed_dim_rgb: 253 176 212;
+
+    --scrim_rgb: 0 0 0;
+
+    --secondary_rgb: 224 189 203;
+
+    --secondary_container_rgb: 89 64 75;
+
+    --secondary_fixed_rgb: 253 217 231;
+
+    --secondary_fixed_dim_rgb: 224 189 203;
+
+    --shadow_rgb: 0 0 0;
+
+    --source_color_rgb: 244 191 214;
+
+    --surface_rgb: 25 17 20;
+
+    --surface_bright_rgb: 64 55 58;
+
+    --surface_container_rgb: 37 29 33;
+
+    --surface_container_high_rgb: 48 40 43;
+
+    --surface_container_highest_rgb: 59 50 54;
+
+    --surface_container_low_rgb: 33 25 29;
+
+    --surface_container_lowest_rgb: 19 12 15;
+
+    --surface_dim_rgb: 25 17 20;
+
+    --surface_tint_rgb: 253 176 212;
+
+    --surface_variant_rgb: 80 67 72;
+
+    --tertiary_rgb: 242 187 154;
+
+    --tertiary_container_rgb: 100 62 37;
+
+    --tertiary_fixed_rgb: 255 219 200;
+
+    --tertiary_fixed_dim_rgb: 242 187 154;
+
+
+	/* Map Matugen colors to Firefox GNOME Theme variables */
+
+    /* Accents */
+    --gnome-accent-bg: var(--primary) !important;
+    --gnome-accent: var(--primary) !important;
+
+    /* Window & Backgrounds */
+    --gnome-window-background: var(--background) !important;
+    --gnome-window-color: var(--on_background) !important;
+    --gnome-view-background: var(--surface) !important;
+    --gnome-view-color: var(--on_surface) !important;
+
+    /* Header & Toolbars */
+    --gnome-headerbar-background: var(--surface_container) !important;
+    --gnome-toolbar-background: var(--surface_container) !important;
+
+    /* Sidebars */
+    --gnome-sidebar-background: var(--surface_container_low) !important;
+    --gnome-secondary-sidebar-background: var(--surface_container_lowest) !important;
+
+    /* Tabs */
+    --gnome-tabbar-background: var(--surface_container) !important;
+    --gnome-tabbar-tab-hover-background: var(--surface_container_high) !important;
+    --gnome-tabbar-tab-active-background: var(--surface_variant) !important;
+    --gnome-tabbar-tab-active-background-contrast: var(--surface_container_highest) !important;
+    --gnome-tabbar-tab-active-hover-background: var(--surface_container_highest) !important;
+
+    /* Menus & Cards */
+    --gnome-menu-background: var(--surface_container_high) !important;
+    --gnome-menu-color: var(--on_surface) !important;
+    --gnome-card-background: var(--surface_container) !important;
+
+    /* Status Colors */
+    --gnome-destructive-bg: var(--error) !important;
+    --gnome-error-bg: var(--error) !important;
+}

@@ -1,0 +1,65 @@
+@import "colors.css";
+
+window {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+button {
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 40%;
+  outline: none;
+  border: none;
+  border-radius: 64px;
+  margin: 8px;
+  margin-top: 365px;
+  margin-bottom: 365px;
+  transition: all 0.3s ease;
+}
+
+button:hover,
+button:focus {
+  background-color: @primary;
+  background-size: 50%;
+}
+
+#logout {
+  background-image: url("./icons/logout.svg");
+}
+#logout:hover,
+#logout:focus {
+  background-image: url("./icons/dark-logout.svg");
+}
+
+#lock {
+  background-image: url("./icons/lock.svg");
+}
+#lock:hover,
+#lock:focus {
+  background-image: url("./icons/dark-lock.svg");
+}
+
+#sleep {
+  background-image: url("./icons/sleep.svg");
+}
+#sleep:hover,
+#sleep:focus {
+  background-image: url("./icons/dark-sleep.svg");
+}
+
+#reboot {
+  background-image: url("./icons/reboot.svg");
+}
+#reboot:hover,
+#reboot:focus {
+  background-image: url("./icons/dark-reboot.svg");
+}
+
+#shutdown {
+  background-image: url("./icons/shutdown.svg");
+}
+#shutdown:hover,
+#shutdown:focus {
+  background-image: url("./icons/dark-shutdown.svg");
+}

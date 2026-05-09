@@ -1,0 +1,25 @@
+{
+    "label" : "logout",
+    "action" : "hyprctl dispatch exit",
+    "keybind" : "l"
+}
+{
+    "label" : "lock",
+    "action" : "hyprlock",
+    "keybind" : "k"
+}
+{
+    "label" : "sleep",
+    "action" : "hyprlock && systemctl suspend",
+    "keybind" : "s"
+}
+{
+    "label" : "reboot",
+    "action" : "systemctl reboot",
+    "keybind" : "r"
+}
+{
+    "label" : "shutdown",
+    "action" : "systemctl poweroff",
+    "keybind" : "s"
+}

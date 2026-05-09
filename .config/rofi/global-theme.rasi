@@ -1,0 +1,66 @@
+/*****----- Global Configuration -----*****/
+configuration {
+    font: "JetBrainsMono Nerd Font 12";
+    directories-first: true;
+    show-icons: true;
+    cycle: false;
+    me-select-entry: "";
+    me-accept-entry: "MousePrimary";
+}
+
+/*****----- Global Properties -----*****/
+@import "colors.rasi"
+
+* {
+    background-color: inherit;
+    text-color: inherit;
+    cursor: inherit;
+    vertical-align: 0.5;
+
+    placeholder-color: #ffffff40;
+    border-radius: 8px;
+    padding: 4px;
+    font-size: 64px;
+}
+
+window {
+    width: 40%;
+    background-color: @surface;
+    text-color: @on-surface;
+}
+
+inputbar {
+    background-color: @surface-container-lowest;
+    spacing: 8px;
+}
+
+entry {
+    cursor: text;
+}
+
+listview {
+    fixed-columns: true;
+    fixed-height: true;
+    lines: 10;
+    spacing: 6px;
+}
+
+element {
+    cursor: pointer;
+}
+
+element selected {
+    background-color: @primary;
+}
+
+element-icon {
+    size: 1.2em;
+}
+
+element-icon selected {
+    background-color: @on-primary;
+}
+
+element-text selected {
+    text-color: @on-primary;
+}

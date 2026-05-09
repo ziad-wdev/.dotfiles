@@ -1,0 +1,32 @@
+/*****----- Theme -----*****/
+@theme "global-theme.rasi"
+
+/*****----- Configuration -----*****/
+configuration {
+    modi: "drun,window";
+
+    display-drun: "  APPS";
+    display-window: "󱂬  WINDOWS";
+
+    drun-display-format: "{name}";
+    window-format: "{w} · {c}";
+}
+
+/*****----- Styles -----*****/
+listview {
+    flow: horizontal;
+    columns: 4;
+    lines: 3;
+}
+
+element {
+    orientation: vertical;
+}
+
+element-icon {
+    size: 4em;
+}
+
+element-text {
+    horizontal-align: 0.5;
+}
