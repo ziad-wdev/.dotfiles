@@ -231,7 +231,7 @@ device_menu() {
     options="$connected\n$paired\n$trusted\n$divider\n$goback\nExit"
 
     # Open rofi menu, read chosen option
-    chosen="$(echo -e "$options" | $rofi_command "$device_name")"
+    chosen="$(echo -e "$options" | $rofi_command -p "$device_name")"
 
     # Match chosen option to command
     case "$chosen" in
@@ -276,7 +276,7 @@ show_menu() {
     fi
 
     # Open rofi menu, read chosen option
-    chosen="$(echo -e "$options" | $rofi_command "Bluetooth")"
+    chosen="$(echo -e "$options" | $rofi_command -p "󰂯  BLUETOOTH")"
 
     # Match chosen option to command
     case "$chosen" in
@@ -304,7 +304,7 @@ show_menu() {
 }
 
 # Rofi command to pipe into, can add any options here
-rofi_command="rofi -dmenu $* -config ~/.config/rofi/configs/bluetooth.rasi -p "󰂯  BLUETOOTH""
+rofi_command="rofi -dmenu $* -config ~/.config/rofi/configs/bluetooth.rasi"
 
 case "$1" in
     --status)
