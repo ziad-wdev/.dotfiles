@@ -65,7 +65,7 @@
 
   "network": {
     "format-wifi": "{icon}   {essid}",
-    "format-ethernet": "󰈀    {essid}",
+    "format-ethernet": "󰈀    Ethernet",
     "format-disabled": "󰤭    Disabled",
     "format-disconnected": "󰤭    Disconnected",
     "format-icons": ["󰤯 ", "󰤟 ", "󰤢 ", "󰤥 ", "󰤨 "],

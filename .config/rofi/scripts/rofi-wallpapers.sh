@@ -7,8 +7,8 @@ mkdir -p "$CACHE_DIR"
 set_wallpaper() {
     cp "$1" "/tmp/current_wallpaper" &
 
-    awww img "$1" --transition-type random &
-    matugen image "$1" --prefer lightness &
+    awww img --transition-type random --transition-fps 60 "$1"
+    matugen image "$1" --prefer darkness &
 }
 
 # Background Cleanup (Quietly removes thumbnails for deleted wallpapers)

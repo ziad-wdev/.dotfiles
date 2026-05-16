@@ -4,6 +4,7 @@ configuration {
     directories-first: true;
     show-icons: true;
     cycle: false;
+    hover-select: true;
     me-select-entry: "";
     me-accept-entry: "MousePrimary";
 }

@@ -17,7 +17,7 @@ element {
 }
 
 element-icon {
-    size: 160px;
+    size: 150px;
 }
 
 element-text {

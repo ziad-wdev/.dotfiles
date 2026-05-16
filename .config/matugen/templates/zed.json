@@ -108,9 +108,9 @@
         "deleted": "{{colors.error.dark.hex}}",
         "deleted.background": "{{colors.error_container.dark.hex}}80",
         "deleted.border": "{{colors.on_error_container.dark.hex}}",
-        "error": "#f38ba8",
-        "error.border": "#f38ba8",
-        "error.background": "#f38ba81f",
+        "error": "{{colors.error.dark.hex}}",
+        "error.background": "{{colors.on_error_container.light.hex}}",
+        "error.border": "{{colors.error.dark.hex}}",
         "hidden": "{{colors.outline_variant.dark.hex}}",
         "hidden.border": "{{colors.outline_variant.dark.hex}}60",
         "hint": "{{colors.primary.dark.hex}}",
@@ -154,122 +154,102 @@
         ],
         "syntax": {
           "attribute": {
-            "color": "#fede5d",
+            "color": "{{colors.fuchsia.dark.hex}}",
             "font_style": null,
             "font_weight": null
           },
           "boolean": {
-            "color": "#f97e72",
+            "color": "{{colors.orange.dark.hex}}",
             "font_style": null,
             "font_weight": null
           },
           "comment": {
-            "color": "{{colors.primary.dark.hex}}",
+            "color": "{{colors.surface_variant.dark.hex}}",
             "font_style": "italic",
             "font_weight": 600
           },
           "comment.doc": {
-            "color": "{{colors.primary.dark.hex}}",
+            "color": "{{colors.surface_variant.dark.hex}}",
             "font_style": "italic",
             "font_weight": 600
           },
           "constant": {
-            "color": "#f97e72",
+            "color": "{{colors.pink.dark.hex}}",
             "font_style": null,
             "font_weight": null
           },
           "constructor": {
-            "color": "#72f1b8",
+            "color": "{{colors.surface_variant.dark.hex}}",
             "font_style": null,
             "font_weight": null
           },
           "function": {
-            "color": "#36f9f6",
+            "color": "{{colors.sky.dark.hex}}",
             "font_style": null,
             "font_weight": null
           },
           "keyword": {
-            "color": "#fede5d",
+            "color": "{{colors.purple.dark.hex}}",
             "font_style": null,
             "font_weight": null
           },
           "label": {
-            "color": "#fe4450",
+            "color": "{{colors.indigo.dark.hex}}",
             "font_style": null,
             "font_weight": null
           },
           "link_text": {
-            "color": "#D50",
+            "color": "{{colors.blue.dark.hex}}",
             "font_style": null,
             "font_weight": null
           },
           "link_uri": {
-            "color": "#D50",
+            "color": "{{colors.teal.dark.hex}}",
             "font_style": null,
             "font_weight": null
           },
           "number": {
-            "color": "#f97e72",
+            "color": "{{colors.orange.dark.hex}}",
             "font_style": null,
             "font_weight": null
           },
           "operator": {
-            "color": "#fede5d",
+            "color": "{{colors.cyan.dark.hex}}",
             "font_style": null,
             "font_weight": null
           },
           "property": {
-            "color": "#ff7edb",
+            "color": "{{colors.emerald.dark.hex}}",
             "font_style": null,
             "font_weight": null
           },
           "punctuation": {
-            "color": "#36f9f6",
-            "font_style": null,
-            "font_weight": null
-          },
-          "punctuation.bracket": {
-            "color": "#36f9f6",
-            "font_style": null,
-            "font_weight": null
-          },
-          "punctuation.delimiter": {
-            "color": "#36f9f6",
-            "font_style": null,
-            "font_weight": null
-          },
-          "punctuation.list_marker": {
-            "color": "#36f9f6",
-            "font_style": null,
-            "font_weight": null
-          },
-          "punctuation.special": {
-            "color": "#36f9f6",
+            "color": "{{colors.on_surface_variant.dark.hex}}",
             "font_style": null,
             "font_weight": null
           },
           "tag": {
-            "color": "#72f1b8",
+            "color": "{{colors.rose.dark.hex}}",
             "font_style": null,
             "font_weight": null
           },
           "title": {
-            "color": "#fe4450",
+            "color": "{{colors.amber.dark.hex}}",
             "font_style": null,
-            "font_weight": null
+            "font_weight": 700
           },
           "type": {
-            "color": "#fe4450",
+            "color": "{{colors.pink.dark.hex}}",
             "font_style": null,
             "font_weight": null
           },
           "variable": {
-            "color": "#ff7edb",
+            "color": "{{colors.on_surface.dark.hex}}",
             "font_style": null,
             "font_weight": null
           },
           "variable.special": {
-            "color": "#fe4450",
+            "color": "{{colors.red.dark.hex}}",
             "font_style": null,
             "font_weight": 700
           }
@@ -381,9 +361,9 @@
         "deleted": "{{colors.error.light.hex}}",
         "deleted.background": "{{colors.error_container.light.hex}}80",
         "deleted.border": "{{colors.on_error_container.light.hex}}",
-        "error": "#d20f39",
-        "error.border": "#d20f39",
-        "error.background": "#d20f391f",
+        "error": "{{colors.error.light.hex}}",
+        "error.background": "{{colors.on_error_container.dark.hex}}",
+        "error.border": "{{colors.error.light.hex}}",
         "hidden": "{{colors.outline_variant.light.hex}}",
         "hidden.border": "{{colors.outline_variant.light.hex}}60",
         "hint": "{{colors.primary.light.hex}}",
@@ -427,122 +407,102 @@
         ],
         "syntax": {
           "attribute": {
-            "color": "#fede5d",
+            "color": "{{colors.fuchsia.dark.hex}}",
             "font_style": null,
             "font_weight": null
           },
           "boolean": {
-            "color": "#f97e72",
+            "color": "{{colors.orange.dark.hex}}",
             "font_style": null,
             "font_weight": null
           },
           "comment": {
-            "color": "{{colors.primary.light.hex}}",
+            "color": "{{colors.surface_variant.dark.hex}}",
             "font_style": "italic",
             "font_weight": 600
           },
           "comment.doc": {
-            "color": "{{colors.primary.light.hex}}",
+            "color": "{{colors.surface_variant.dark.hex}}",
             "font_style": "italic",
             "font_weight": 600
           },
           "constant": {
-            "color": "#f97e72",
+            "color": "{{colors.pink.dark.hex}}",
             "font_style": null,
             "font_weight": null
           },
           "constructor": {
-            "color": "#72f1b8",
+            "color": "{{colors.surface_variant.dark.hex}}",
             "font_style": null,
             "font_weight": null
           },
           "function": {
-            "color": "#36f9f6",
+            "color": "{{colors.sky.dark.hex}}",
             "font_style": null,
             "font_weight": null
           },
           "keyword": {
-            "color": "#fede5d",
+            "color": "{{colors.purple.dark.hex}}",
             "font_style": null,
             "font_weight": null
           },
           "label": {
-            "color": "#fe4450",
+            "color": "{{colors.indigo.dark.hex}}",
             "font_style": null,
             "font_weight": null
           },
           "link_text": {
-            "color": "#D50",
+            "color": "{{colors.blue.dark.hex}}",
             "font_style": null,
             "font_weight": null
           },
           "link_uri": {
-            "color": "#D50",
+            "color": "{{colors.teal.dark.hex}}",
             "font_style": null,
             "font_weight": null
           },
           "number": {
-            "color": "#f97e72",
+            "color": "{{colors.orange.dark.hex}}",
             "font_style": null,
             "font_weight": null
           },
           "operator": {
-            "color": "#fede5d",
+            "color": "{{colors.cyan.dark.hex}}",
             "font_style": null,
             "font_weight": null
           },
           "property": {
-            "color": "#ff7edb",
+            "color": "{{colors.emerald.dark.hex}}",
             "font_style": null,
             "font_weight": null
           },
           "punctuation": {
-            "color": "#36f9f6",
-            "font_style": null,
-            "font_weight": null
-          },
-          "punctuation.bracket": {
-            "color": "#36f9f6",
-            "font_style": null,
-            "font_weight": null
-          },
-          "punctuation.delimiter": {
-            "color": "#36f9f6",
-            "font_style": null,
-            "font_weight": null
-          },
-          "punctuation.list_marker": {
-            "color": "#36f9f6",
-            "font_style": null,
-            "font_weight": null
-          },
-          "punctuation.special": {
-            "color": "#36f9f6",
+            "color": "{{colors.on_surface_variant.dark.hex}}",
             "font_style": null,
             "font_weight": null
           },
           "tag": {
-            "color": "#72f1b8",
+            "color": "{{colors.rose.dark.hex}}",
             "font_style": null,
             "font_weight": null
           },
           "title": {
-            "color": "#fe4450",
+            "color": "{{colors.amber.dark.hex}}",
             "font_style": null,
-            "font_weight": null
+            "font_weight": 700
           },
           "type": {
-            "color": "#fe4450",
+            "color": "{{colors.pink.dark.hex}}",
             "font_style": null,
             "font_weight": null
           },
           "variable": {
-            "color": "#ff7edb",
+            "color": "{{colors.on_surface.dark.hex}}",
             "font_style": null,
             "font_weight": null
           },
           "variable.special": {
-            "color": "#fe4450",
+            "color": "{{colors.red.dark.hex}}",
             "font_style": null,
             "font_weight": 700
           }

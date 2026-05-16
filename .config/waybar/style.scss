@@ -14,13 +14,14 @@ $bg-lighter: #{"@surface_container_low"};
 $fg: #{"@on_surface"};
 $fg-primary: #{"@on_primary"};
 
-$green: #{"mix(@primary , #28A745 , 0.5)"};
-$red: #{"mix(@primary , #DC3545 , 0.5)"};
-$blue: #{"mix(@primary , #007BFF , 0.5)"};
-$orange: #{"mix(@primary , #FD7E14 , 0.5)"};
+$green: #{"@green"};
+$red: #{"@red"};
+$blue: #{"@blue"};
+$orange: #{"@orange"};
 
 * {
   color: $fg;
+  font-weight: 500;
   padding: 0;
   margin: 0;
   min-width: 0;

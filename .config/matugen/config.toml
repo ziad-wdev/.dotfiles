@@ -4,6 +4,32 @@
 
 [config]
 
+[config.wallpaper]
+command = "awww img --transition-type random --transition-fps 60 {{image}}"
+
+[config.custom_colors]
+# colors from tailwind
+red =             { color = "#ff6467", blend = true } # red-400
+orange =          { color = "#ff8904", blend = true } # orange-400
+amber =           { color = "#ffba00", blend = true } # amber-400
+yellow =          { color = "#fcc800", blend = true } # yellow-400
+lime =            { color = "#9ae600", blend = true } # lime-400
+green =           { color = "#05df72", blend = true } # green-400
+emerald =         { color = "#00d492", blend = true } # emerald-400
+teal =            { color = "#00d5be", blend = true } # teal-400
+cyan =            { color = "#00d3f2", blend = true } # cyan-400
+sky =             { color = "#00bcff", blend = true } # sky-400
+blue =            { color = "#51a2ff", blend = true } # blue-400
+indigo =          { color = "#7c86ff", blend = true } # indigo-400
+violet =          { color = "#a684ff", blend = true } # violet-400
+purple =          { color = "#c27aff", blend = true } # purple-400
+fuchsia =         { color = "#ed6aff", blend = true } # Fuchsia-400
+pink =            { color = "#fb64b6", blend = true } # pink-400
+rose =            { color = "#ff637e", blend = true } # rose-400
+
+# other custom colors (also based on tailwind color palette)
+navy =            { color = "#193cb8", blend = true } # blue-800
+
 [templates.gtk3]
 input_path = '~/.config/matugen/templates/gtk.css'
 output_path = '~/.config/gtk-3.0/colors.css'

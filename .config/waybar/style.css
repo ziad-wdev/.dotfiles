@@ -1,6 +1,7 @@
 @import "colors.css";
 * {
   color: @on_surface;
+  font-weight: 500;
   padding: 0;
   margin: 0;
   min-width: 0;
@@ -76,19 +77,19 @@
 }
 
 #battery {
-  color: mix(@primary , #28A745 , 0.5);
+  color: @green;
 }
 
 #network {
-  color: mix(@primary , #DC3545 , 0.5);
+  color: @red;
 }
 
 #bluetooth {
-  color: mix(@primary , #007BFF , 0.5);
+  color: @blue;
 }
 
 #wireplumber {
-  color: mix(@primary , #FD7E14 , 0.5);
+  color: @orange;
 }
 
 /* tray */

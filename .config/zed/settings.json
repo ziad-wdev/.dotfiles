@@ -1,12 +1,5 @@
 {
   "cli_default_open_behavior": "existing_window",
-  "agent": {
-    "dock": "left",
-    "flexible": true,
-    "default_height": 400,
-    "default_profile": "write",
-    "default_width": 400,
-  },
   "autosave": {
     "after_delay": {
       "milliseconds": 1000,
@@ -31,9 +24,9 @@
     "tree_view": true,
   },
   "icon_theme": {
-    "mode": "light",
-    "light": "Warm Charmed Icons",
-    "dark": "Warm Charmed Icons",
+    "mode": "dark",
+    "light": "Light Charmed Icons",
+    "dark": "Soft Charmed Icons",
   },
   "indent_guides": {
     "active_line_width": 2,
@@ -43,7 +36,6 @@
   "minimap": {
     "show": "auto",
     "thumb": "always",
-    "thumb_border": "none",
   },
   "outline_panel": {
     "default_width": 400,
@@ -90,6 +82,10 @@
   "terminal": {
     "cursor_shape": "block",
     "default_height": 400,
+  },
+  "agent": {
+    "default_width": 400,
+    "flexible": false,
   },
   "theme": {
     "dark": "Matugen Dark",
